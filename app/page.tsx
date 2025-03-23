@@ -10,9 +10,8 @@ export default function Home() {
       <header className="absolute top-0 w-full z-10">
         <Navbar />
       </header>
-      <main className="w-full h-screen overflow-hidden">
+      <main className="w-full min-h-screen">
         <Hero/>
-        <WorkStrip/>
         <Portfolio/>
       </main>
       <footer></footer>

@@ -3,19 +3,18 @@ import React from "react";
 const Buttton = ({
   buttonName,
   className,
+  targetUrl
 }: {
   buttonName: string;
+  targetUrl?: string;
   className?: string;
 }) => {
   return (
-    <a
-      href="/"
-      className={`gradient-bg rounded-[20px] p-[1px] min-h-fit ${className}`}
+    <div
+      className={`rounded-[20px] p-[1px] min-h-fit min-w-auto gradient-bg transition-all duration-300 ease-in-out ${className}`}
     >
-      <div className="w-full h-full flex flex-col items-center justify-center p-[10px] bg-white rounded-[20px]">
-        <p className="w-fit h-fit text-nowrap gradient-bg text-bg">{buttonName}</p>
-      </div>
-    </a>
+      <a href={targetUrl} className="flex items-center justify-center h-full rounded-[20px] bg-white bg-clip-content hover:bg-clip-text hover:text-white transition-all duration-300 ease-in-out"><p className="w-fit text-inherit p-[10px]">{buttonName}</p></a>
+    </div>
   );
 };
 
