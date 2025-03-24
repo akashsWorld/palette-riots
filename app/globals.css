@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "tailwindcss";
-
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme{
-  --font-inter: 'Inter', sans-serif;
-  --font-poppins: 'Poppins', sans-serif;
-  --font-outfit: 'Outfit', sans-serif;
-  --font-dmserif: 'DM Serif Display', serif;
-  --color-primary: #12C2E9;
-  --color-secondary: #C471ED;
-  --color-tertiary: #F64F59;
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
+  --font-dmserif: "DM Serif Display", serif;
+  --color-primary: #12c2e9;
+  --color-secondary: #c471ed;
+  --color-tertiary: #f64f59;
 }
 
 @theme inline {
@@ -40,13 +39,42 @@ body {
   @apply bg-gradient-to-r from-primary via-secondary to-tertiary;
 }
 
-.text-bg{
-  @apply bg-clip-text text-transparent; 
+.text-bg {
+  @apply bg-clip-text text-transparent;
 }
 
-.navitems a{
-  @apply font-outfit font-medium text-lg
+.navitems a {
+  @apply font-outfit font-medium text-lg;
 }
-.translate-center{
-  @apply translate-x-[-50%] translate-y-[-50%] top-1/2 left-1/2 absolute
+.translate-center {
+  @apply translate-x-[-50%] translate-y-[-50%] top-1/2 left-1/2 absolute;
+}
+
+.btn {
+  display: flex;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  background-clip: padding-box;
+  background-image: linear-gradient(
+      to right,
+      var(--color-primary),
+      var(--color-secondary),
+      var(--color-tertiary)
+    ),
+    linear-gradient(white, white); /* Gradient border */
+  -webkit-background-clip: text, border-box;
+  /* background-clip: text, border-box; */
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  -webkit-background-clip: text, border-box;
+  background-clip: text;
+  color:white;
+  -webkit-text-fill-color: white;
 }
