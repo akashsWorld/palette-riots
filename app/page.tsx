@@ -11,15 +11,15 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <header className="absolute top-0 w-full z-10 bg-amber-300 drop-shadow-xl">
+      <header className="absolute top-0 w-full z-10 bg-white drop-shadow-xl">
         <Navbar />
       </header>
       <main className="w-full h-fit">
         <Hero />
-        {/* <Portfolio  />
+        <Portfolio  />
         <WorkFields />
         <Description />
-        <Contact /> */}
+        <Contact />
       </main>
       <footer className="mx-auto mt-[157px] w-fit mb-[19px]">
         <div className="flex flex-col items-center h-fit w-fit gap-3">

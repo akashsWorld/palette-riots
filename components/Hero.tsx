@@ -4,7 +4,7 @@ import WorkStrip from "./WorkStrip";
 
 const Hero = () => {
   return (
-    <div className="relative sm:mt-30 h-[700px] lg:h-screen flex flex-col items-center justify-end">
+    <div className="relative h-[700px] lg:h-screen flex flex-col items-center justify-end">
       <div className="relative flex flex-col items-center justify-center gap-3">
         <h1 className="font-dmserif text-[40px] lg:text-[80px] text-center leading-tight max-w-[60%]">
           Design that <span className="gradient-bg text-bg">Speaks</span> Brands

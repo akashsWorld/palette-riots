@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased relative w-screen`}
+        className={`antialiased relative`}
       >
         {children}
       </body>

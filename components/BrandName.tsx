@@ -1,8 +1,8 @@
 const BrandName = ({ className }: { className?: string }) => {
   return (
-    <div className="inline-block">
-      <div className="flex gap-2 min-w-fit">
-        <h2 className="md:text-[2xl] font-bold uppercase font-inter inline-block gradient-bg text-bg">
+    <div className="leading-0.5">
+      <div className="flex gap-2 min-w-fit md:text-2xl">
+        <h2 className=" font-bold uppercase font-inter inline-block gradient-bg text-bg">
           pale
           <span className="tracking-tighter">tt</span>e
         </h2>
