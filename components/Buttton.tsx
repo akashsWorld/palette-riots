@@ -15,13 +15,13 @@ const Buttton = ({
     type === "secondary" ? (
       <a
         href={targetUrl}
-        className={`text-white border-2 border-white min-w-fit hover:text-black hover:bg-white ${className}`}
+        className={`p-[10px] rounded-[20px] transition-all ease-out duration-300 text-white border-2 border-white min-w-fit text-center cursor-pointer  hover:text-black hover:bg-white ${className}`}
       >
         {buttonName}
       </a>
     ) : (
       <div className="gradient-bg p-[1px] rounded-[20px]">
-        <a href={targetUrl} className={`btn ${className}`}>
+        <a href={targetUrl} className={`btn flex flex-col items-center justify-center ${className}`}>
           {buttonName}
         </a>
       </div>
