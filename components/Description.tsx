@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import cardImage from "@/public/cardImage.jpeg";
+import description from '@/public/description.svg'
 
 const Description = () => {
   return (
@@ -16,11 +16,11 @@ const Description = () => {
       <div className="w-full flex gap-[23px] overflow-hidden mt-[50px] h-[403px]">
         <div className="w-1/2 h-full">
           <Image
-            src={cardImage}
+            src={description}
             height={400}
             width={400}
             alt="anIm"
-            className="object-cover w-full h-full "
+            className="object-contain w-full h-full"
           />
         </div>
         <div className="w-1/2 relative px-2 h-full">

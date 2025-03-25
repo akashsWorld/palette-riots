@@ -75,6 +75,31 @@ body {
 .btn:hover {
   -webkit-background-clip: text, border-box;
   background-clip: text;
-  color:white;
+  color: white;
   -webkit-text-fill-color: white;
+}
+.card-animation {
+  animation: slide-card 400s linear infinite;
+}
+
+.strip-animation{
+  animation: slide-strip 400s linear infinite;
+}
+
+@keyframes slide-card {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide-strip {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

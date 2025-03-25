@@ -46,9 +46,9 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex items-center justify-between w-full">
-            <ContactInfo icon={<FaWhatsapp/>} details={'+91 1234567890'}/>
-            <ContactInfo icon={<MdPhone/>} details={'+91 1234567890'}/>
-            <ContactInfo icon={<MdOutlineEmail/>} details={'+91 1234567890'}/>
+            <ContactInfo icon={<MdPhone/>} details={'+91 8240768751'}/>
+            <ContactInfo icon={<FaWhatsapp/>} details={'+91 7679567359'}/>
+            <ContactInfo icon={<MdOutlineEmail/>} details={'business@paletteriots.com'}/>
         </div>
       </div>
     </div>

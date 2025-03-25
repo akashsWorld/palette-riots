@@ -11,12 +11,12 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <header className="absolute top-0 w-full z-10">
+      <header className="absolute top-0 w-full z-10 bg-white drop-shadow-xl">
         <Navbar />
       </header>
       <main className="w-full min-h-screen">
         <Hero />
-        <Portfolio />
+        <Portfolio  />
         <WorkFields />
         <Description />
         <Contact />

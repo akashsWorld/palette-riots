@@ -1,7 +1,8 @@
 import React from "react";
 import WorkCard from "./WorkCard";
-
+import constants from "@/utility/constants";
 const WorkFields = () => {
+    const {workCards} = constants;
   return (
     <div className="mt-[157px] w-[1209px] h-[818px] mx-auto">
       <div className="w-full text-center">
@@ -13,7 +14,9 @@ const WorkFields = () => {
         </h2>
         
         <div className="mt-[70px] grid grid-cols-3 gap-x-6 gap-y-[44px]">
-          <WorkCard />
+          {workCards.map(eachWork=>(
+            <WorkCard image={eachWork.image} title={eachWork.title} key={eachWork.title}/>
+          ))}
         </div>
       </div>
     </div>
