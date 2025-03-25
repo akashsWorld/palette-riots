@@ -4,7 +4,7 @@ import constants from "@/utility/constants";
 const WorkFields = () => {
     const {workCards} = constants;
   return (
-    <div className="mt-[157px] w-[1209px] h-[818px] mx-auto">
+    <div id="services" className="mt-[157px] w-[1209px] h-[818px] mx-auto">
       <div className="w-full text-center">
         <h2 className="font-outfit text-[64px] font-medium">
           Designing experiences that{" "}

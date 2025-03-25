@@ -4,7 +4,7 @@ import description from '@/public/description.svg'
 
 const Description = () => {
   return (
-    <div className="mt-[157px] mx-[120px]">
+    <div id="aboutus" className="mt-[157px] mx-[120px]">
       <div className="flex items-center flex-col">
         <h3 className="gradient-bg text-bg font-medium text-[40px] w-fit">
           The Palette Riots Story

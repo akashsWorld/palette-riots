@@ -19,7 +19,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className="w-full h-fit relative mt-[174px] overflow-hidden">
+    <div id='portfolio' className="w-full h-fit relative mt-[174px] overflow-hidden">
       <div className="mx-auto text-center">
         <h2 className="text-6xl font-outfit font-medium text-nowrap">
           Designs That Speak for Themselves
