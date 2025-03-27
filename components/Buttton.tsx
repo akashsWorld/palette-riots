@@ -21,7 +21,7 @@ const Buttton = ({
       </a>
     ) : (
       <div className="gradient-bg p-[1px] rounded-[20px]">
-        <a href={targetUrl} className={`btn flex flex-col items-center justify-center ${className}`}>
+        <a href={targetUrl} className={`btn flex flex-col items-center justify-center font-semibold md:font-bold text-[10px] md:text-[16px] text-white  p-2 md:p-[10px] rounded-[20px] ${className}`}>
           {buttonName}
         </a>
       </div>

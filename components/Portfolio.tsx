@@ -19,12 +19,12 @@ const Portfolio = () => {
   ];
 
   return (
-    <div id='portfolio' className="w-full h-fit relative mt-[174px] overflow-hidden">
-      <div className="mx-auto text-center">
-        <h2 className="text-6xl font-outfit font-medium text-nowrap">
+    <div id='portfolio' className="w-full h-fit relative mt-[30px] md:mt-[80px] lg:mt-[174px] overflow-hidden">
+      <div className="heading">
+        <h2 className="font-outfit font-medium">
           Designs That Speak for Themselves
         </h2>
-        <h2 className="text-6xl font-outfit font-medium ">
+        <h2 className="font-outfit font-medium ">
           <span className="gradient-bg text-bg">Our works</span>
         </h2>
       </div>

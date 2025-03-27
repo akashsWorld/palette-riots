@@ -5,20 +5,39 @@ const Input = ({
   placeholder,
   type,
   labelName,
+  value,
+  onChangeHandle,
 }: {
   className?: string;
   placeholder?: string;
   type: InputType;
   labelName?: string;
+  value?: string;
+  onChangeHandle?: (data: string) => void;
 }) => {
+
+  
   return (
-    <div className={`min-w-[150px] min-h-[20px] p-[11px] bg-white rounded-[10px] drop-shadow-lg ${className}`}>
+    <div
+      className={`min-w-[120px] min-h-[20px] p-[11px] bg-white rounded-[10px] drop-shadow-lg ${className}`}
+    >
       {labelName && <label className="text-[#C5C5C5]">{labelName}</label>}
-      <input
-        type={type}
-        placeholder={placeholder}
-        className="outline-none h-full w-full placeholder:font-outfit relative placeholder:absolute placeholder:top-0 placeholder:text-[#C5C5C5]"
-      />
+      {type === "textarea" ? (
+        <textarea
+          value={value}
+          placeholder={placeholder}
+          onChange={(eve) => onChangeHandle && onChangeHandle(eve.target.value)}
+          className="text-field"
+        />
+      ) : (
+        <input
+          type={type}
+          value={value}
+          placeholder={placeholder}
+          onChange={(eve) => onChangeHandle && onChangeHandle(eve.target.value)}
+          className="text-field"
+        />
+      )}
     </div>
   );
 };

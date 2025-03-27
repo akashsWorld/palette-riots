@@ -11,7 +11,7 @@ const WorkCard = ({
     title:string
 }) => {
   return (
-    <div className="h-[271px] w-[387px] rounded-[20px] overflow-hidden relative hover:w-[397px] hover:h-[278px] transition-all ease-out duration-300">
+    <div className="h-[140px] md:h-[171px] lg:h-[271px] w-full rounded-[20px] overflow-hidden relative transition-all ease-out duration-300 hover:scale-105">
       <Image
         className="w-full h-full object-cover "
         src={image}
@@ -20,8 +20,8 @@ const WorkCard = ({
         alt="anIm"
       />
       <div className="h-full w-full translate-center bg-gradient-to-b from-transparent from-85% to-black"></div>
-      <div className="absolute z-10 bottom-[18px] left-[17px] h-6 flex items-center">
-        <p className="uppercase text-2xl font-outfit font-normal text-white">{title}</p>
+      <div className="absolute z-10 bottom-2 lg:bottom-[18px] left-[17px] h-6 flex items-center">
+        <p className="uppercase text-lg font-medium lg:text-2xl font-outfit lg:font-normal text-white">{title}</p>
         <MdArrowOutward className="text-white text-2xl"/>
       </div>
     </div>

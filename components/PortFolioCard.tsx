@@ -19,24 +19,24 @@ const PortFolioCard = ({
 }) => {
   return (
     <div
-      className={`h-[614px] w-[590px] p-[30px] border-2 border-[#e4e4e4] rounded-[20px] flex flex-col items-center ${className}`}
+      className={`h-[420px] md:h-[560px] lg:h-[614px] md:w-[450px] lg:w-[590px] p-[10px] md:p-[20px] lg:p-[30px] border-2 border-[#e4e4e4] rounded-[20px] flex flex-col items-center ${className}`}
     >
-      <div className="w-[531px]">
-        <div className="w-full h-[397px] overflow-hidden rounded-[20px]">
+      <div className="w-full">
+        <div className="w-full h-[197px] md:h-[280px] lg:h-[397px] overflow-hidden rounded-[20px] aspect-square">
           <Image
             src={image}
             height={400}
             width={400}
             alt="anIm"
-            className="w-full h-full object-cover"
+            className="object-cover w-full h-full"
           />
         </div>
-        <p className="font-outfit text-2xl font-medium">{subTitle}</p>
+        <p className="font-outfit text-lg md:text-[22px] lg:text-2xl font-medium">{subTitle}</p>
       </div>
       <div className="flex justify-between h-auto w-full ">
-        <h4 className="text-[40px] font-semibold font-outfit ">{title}</h4>
-        <span className="rounded-full w-[64px] h-[64px] bg-black flex items-center justify-center">
-          <MdArrowOutward className="text-2xl text-white" />
+        <h4 className="text-[22px] md:text-3xl lg:text-[40px] font-semibold font-outfit ">{title}</h4>
+        <span className="rounded-full w-[30px] h-[30px]  md:w-[40px] md:h-[40px] lg:w-[64px] lg:h-[64px] bg-black flex items-center justify-center">
+          <MdArrowOutward className="text-white text-xl md:text-lg" />
         </span>
       </div>
       <div className="w-full flex flex-wrap flex-row gap-2 mt-[4px]">

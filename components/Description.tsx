@@ -4,17 +4,17 @@ import description from '@/public/description.svg'
 
 const Description = () => {
   return (
-    <div id="aboutus" className="mt-[157px] mx-[120px]">
-      <div className="flex items-center flex-col">
-        <h3 className="gradient-bg text-bg font-medium text-[40px] w-fit">
+    <div id="aboutus" className="mt-[157px] horizpntal-margin">
+      <div className="flex items-center flex-col heading">
+        <h3 className="gradient-bg text-bg text-xl md:text-2xl lg:text-4xl  w-fit">
           The Palette Riots Story
         </h3>
-        <h2 className="text-center font-outfit font-medium text-[64px] w-[608px]">
+        <h2 className="text-2xl md:text-4xl lg:text-6xl">
           Designing the Future, One Pixel at a Time
         </h2>
       </div>
-      <div className="w-full flex gap-[23px] overflow-hidden mt-[50px] h-[403px]">
-        <div className="w-1/2 h-full">
+      <div className="w-[90%] mx-auto flex flex-col items-center md:flex-row gap-[23px] overflow-hidden mt-[50px] h-fit md:h-[403px]">
+        <div className="md:w-1/2">
           <Image
             src={description}
             height={400}
@@ -23,8 +23,8 @@ const Description = () => {
             className="object-contain w-full h-full"
           />
         </div>
-        <div className="w-1/2 relative px-2 h-full">
-          <p className="translate-center text-center font-outfit font-light text-2xl w-full">
+        <div className="md:w-1/2 relative px-2 h-fit md:h-full flex items-center">
+          <p className="md:translate-center text-center font-outfit font-light text-xl md:text-2xl w-full">
             We are a vibrant team that deals with a riot of colors and
             intellectualism from anywhere in the world. Together we will create
             footprints of quality embeded in artistic creativity.

@@ -19,8 +19,8 @@ const WorkStrip = () => {
   ];
 
   return (
-    <div className="w-full h-[300px] flex flex-col justify-center overflow-hidden">
-      <div className="w-full h-[100px] gradient-bg skew-[-6deg] mt-[28px] relative ">
+    <div className="w-full h-[125px] md:h-[200px] lg:h-[303px] flex flex-col justify-center items-center overflow-clip">
+      <div className="w-[105vw] h-[50px] md:h-[70px] lg:h-[100px] gradient-bg -rotate-6 mt-[28px] relative ">
         <div className="h-full w-fit strip-animation flex items-center gap-3 translate-center">
           {items.map((eachCard, index) => {
             return (
@@ -28,7 +28,7 @@ const WorkStrip = () => {
                 className="w-fit flex items-center mx-[8px] gap-[8px] "
                 key={index}
               >
-                <h5 className="font-outfit font-semibold text-4xl text-white inline-block text-center text-nowrap">
+                <h5 className="font-outfit font-semibold text-2xl md:text-4xl text-white inline-block text-center text-nowrap">
                   {eachCard.title}
                 </h5>
                 <Image

@@ -2,16 +2,18 @@ import React from 'react'
 
 const ContactInfo = ({
     icon,
-    details
+    details,
+    target
 }:{
     icon:React.ReactNode,
-    details:string
+    details:string,
+    target?:string
 }) => {
   return (
-    <div className='flex items-center w-fit text-white gap-1'>
-        <span className='text-2xl'>{icon}</span>
-        <p className='font-outfit font-medium text-xl'>{details}</p>
-    </div>
+    <a  href={target} className='flex items-center w-fit text-white gap-1 text-base md:text-lg lg:text-xl cursor-pointer'>
+        <span className='text-inherit'>{icon}</span>
+        <p className='font-outfit font-medium'>{details}</p>
+    </a>
   )
 }
 
